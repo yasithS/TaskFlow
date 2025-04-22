@@ -25,7 +25,7 @@ def index():
         try:
             db.session.add(new_task)
             db.session.commit()
-            return render_template('error.html')
+            return redirect('/')
         except Exception as e:
             db.session.rollback()
             return render_template('index.html', error=str(e), tasks=Todo.query.all())
