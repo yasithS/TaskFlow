@@ -35,3 +35,12 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+h4{
+    color: #ab53da;
+    text-align: center;
+}
+
+#secondRaw{
+    font-size: 13px;
+}
